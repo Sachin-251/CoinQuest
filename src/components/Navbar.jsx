@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className='nav-container'>
         <div className='logo-container'>
-            <Avatar src={icon} size="large" />
+            <img src={icon} alt='icon' width={70} height={70} />
             <Typography.Title level={2} className='logo'>
                 <Link to="/">CoinQuest</Link>
             </Typography.Title>
