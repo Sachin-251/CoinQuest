@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# CoinQuest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CoinQuest is a comprehensive cryptocurrency information platform built with modern web development technologies. The platform provides in-depth data on all major cryptocurrencies, crypto markets, and exchanges, along with the latest cryptocurrency news.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Links](#links)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Cryptocurrency Data**: Detailed information on all major cryptocurrencies, including prices, market caps, trading volumes, and historical data.
+- **Market and Exchange Insights**: Comprehensive data on cryptocurrency markets and exchanges, enabling users to compare and analyze different trading platforms.
+- **Interactive Charts**: Visualization of cryptocurrency trends and data using Chart.js.
+- **Latest News**: Integration with Bing News API to display the latest news articles and updates on cryptocurrencies.
+- **User-Friendly Interface**: Clean and modern UI design using Ant Design.
+- **Responsive Design**: Optimized for accessibility and performance across various devices, including desktops, tablets, and mobile phones.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React.js**: For building the user interface.
+- **Redux Toolkit**: For state management.
+- **RTK Query**: For data fetching and caching.
+- **Ant Design**: For the UI components and styling.
+- **Chart.js**: For data visualization.
+- **Rapid API**: For integrating third-party APIs.
+- **Coinranking API**: For real-time cryptocurrency data.
+- **Bing News API**: For the latest cryptocurrency news.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sachin-251/CoinQuest.git
+   cd CoinQuest
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Set up environment variables:
+   Create a `.env` file in the root directory and add your API keys:
+   ```env
+    REACT_APP_RAPIDAPI_KEY =  [YOUR RAPID API KEY]
+    REACT_APP_CRYPTO_API_URL = 'https://coinranking1.p.rapidapi.com'
+    REACT_APP_NEWS_API_URL = 'https://news-api14.p.rapidapi.com/v2'
+    REACT_APP_EXCHANGE_API_URL = 'https://coingecko.p.rapidapi.com'
+    REACT_APP_NEWS_RAPIDAPI_HOST = 'news-api14.p.rapidapi.com'
+    REACT_APP_CRYPTO_RAPIDAPI_HOST ='coinranking1.p.rapidapi.com'
+    REACT_APP_EXCHANGE_RAPIDAPI_HOST = 'coingecko.p.rapidapi.com'
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+5. Open your browser and go to `http://localhost:3000` to view the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Browse detailed information on major cryptocurrencies.
+- View and analyze data on different crypto markets and exchanges.
+- Stay updated with the latest news articles on cryptocurrencies.
+- Explore interactive charts to visualize market trends.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! Please follow these steps to contribute:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Links
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Rapid API](https://rapidapi.com)
+- [CoinRanking API](https://rapidapi.com/Coinranking/api/coinranking1?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel) 
+- [News API](https://rapidapi.com/bonaipowered/api/news-api14)
+- [CoinGecko API](https://rapidapi.com/coingecko/api/coingecko)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to reach out with any questions or feedback. Enjoy exploring CoinQuest!
