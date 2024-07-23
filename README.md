@@ -32,7 +32,8 @@ https://coinquest-dev.vercel.app/
 - **Chart.js**: For data visualization.
 - **Rapid API**: For integrating third-party APIs.
 - **Coinranking API**: For real-time cryptocurrency data.
-- **Bing News API**: For the latest cryptocurrency news.
+- **News API**: For the latest cryptocurrency news.
+- **CoinGecko API**: For the real-time exchanges data.
 
 ## Installation
 
